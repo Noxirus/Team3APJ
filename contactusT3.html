@@ -9,47 +9,54 @@
 
 <form>
 	<div>
-		<label>First Name:
+		<label>First Name*
 			<input type="text" name="fname" placeholder="firstname" required>
 		</label></br>
 
-		<label>last Name:
+		<label>last Name*
 			<input type="text" name="lname" placeholder="lastname" required>
 		</label></br>
-		<label>Company:
+		<label>Company
 			<input type="text" name="company">
 		</label></br>
 
-		<label>How did you hear about us?:
-			<input type="text" name="how">
+		<label>How did you</br>hear about us?
+			<input type="text" name="how" required>
 		</label></br>
-		<label>Address:
+		<label>Address
 			<input type="text" name="addr" placeholder="Please enter address">
 		</label></br>
 
-		<label>City:
+		<label>City
 			<input type="text" name="city" placeholder="city">
 		</label></br>
 
-		<label>Province:
+		<label>Province
 			<select name="prov"/>
    		       <option value="">Select a Province</option>
    		       <option value="AB">Alberta</option>
    		       <option value="BC">British Columbia</option>
-   		       <option value="SK">Saskatcewan</option>
+   		       <option value="BC">Manitoba</option>
+   		       <option value="NB">New Brunswick</option>
+   		       <option value="NL">Newfoundland and Labrador</option>
+   		       <option value="NS">Nova Scotia</option>
+   		       <option value="ON">Ontario</option>
+   		       <option value="QU">Quebec</option>
+   		       <option value="SK">Saskatchewan</option>
+   		   </select>
 
 		</label></br>
 
-		<label>phone:
+		<label>phone
 			<input type="text" name="phone">
 		</label></br>
 
-		<label>Email:
+		<label>Email*
 			<input type="text" name="email" required>
 		</label></br>
 
-		<label>comments:
-			<input type="text" name="comment" placeholder="Please enter your comments here" required>
+		<label>comments*
+			<textarea name="story" rows="10" cols="50" required></textarea>
 		</label></br>
 	</div>
 
