@@ -1,0 +1,27 @@
+.jumbo-bg{
+	background-image: url('/media/sait_sunrise.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height:100%;
+}
+.fill{
+    min-height: 100vh;
+    height: 100%;
+}
+.see-through {
+	background: rgba(255, 255, 255, 0.7);
+}
+.salad {
+	opacity: 1;
+}
+.padder-top{
+	padding-top: 50px;
+}
+.padder-bottom{
+	padding-bottom: 50px;
+}
+.no-pad{
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
