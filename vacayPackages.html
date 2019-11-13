@@ -2,40 +2,106 @@
 <html class="h-100" lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Sarah Hanson">
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="author" content="Sarah Hanson">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="hoverEffect.css">
 	<title>Travelco</title>
 </head>
 <body>
-	<nav class="navbar navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="index.html">Travelco</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<form class="form-inline mt-2 mt-md-0" action="bouncer.php" method="post">
-						<input class="form-control mr-sm-2" type="text" placeholder="Email" aria-label="Email">
-						<input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-					</form>
-				</li>
-					<li class="nav-item"> <a class="nav-link" href="registration.html">Register</a>
-					<li class="nav-item"> <a class="nav-link" href="contactusT3.html">Contact Us</a>
-					<li class="nav-item"> <a class="nav-link" href="vacayPackages.html">Vacation Packages</a>
-				</li>
-			</ul>
+<!-- Navbar -->
+<nav class="navbar navbar-dark fixed-top bg-dark">
+	<a class="navbar-brand" href="/index.html">Travelco</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<form class="form-inline mt-2 mt-md-0" action="/bouncer.php" method="post">
+					<input class="form-control mr-sm-2" type="text" placeholder="Email" aria-label="Email">
+					<input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+				</form>
+			</li>
+			<li class="nav-item"> <a class="nav-link" href="/registration.html">Register</a></li>
+			<li class="nav-item"> <a class="nav-link" href="/contactusT3.html">Register</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="jumbotron sticky-top jumbo-bg fill">
+<!-- 4 panel feature packages -->
+	<div class="jumbotron text-center md-10 p-2 pt-0 light see-through">
+		<h1 class="display-3 font-weight-bold mt-0 pt-0"> Feature Packages </h2>
+		<div class="row no-gutters salad">
+			<!-- individual pic with hover-effect -->
+			<div class="col-md-3">
+				<div class="hovereffect">
+					<img class="img-responsive rounded img-fluid"
+					src="/media/pkgs/cliffs-crop.jpg" alt="">
+					<div class="overlay">
+						<h2>Backpack along rocky shores</h2>
+						<p> <a href="/pkgs/wct.html">Book Now</a> </p>
+					</div>
+				</div>
+			</div>
+			<!-- individual pic with hover-effect -->
+			<div class="col-md-3">
+				<div class="hovereffect">
+					<img class="img-responsive rounded img-fluid"
+					src="/media/pkgs/sunrise-crop.jpg" alt="">
+					<div class="overlay">
+						<h2> See beautiful sunsets on lakeside lodgings</h2>
+						<p> <a href="/pkgs/fishtrip.html">Book Now</a> </p>
+					</div>
+				</div>
+			</div>
+			<!-- individual pic with hover-effect -->		
+			<div class="col-md-3">
+				<div class="hovereffect">
+					<img class="img-responsive rounded img-fluid"
+					src="/media/pkgs/harbor-crop.jpg" alt="">
+					<div class="overlay">
+						<h2>Visit the ocean and eat delicious fresh caught fish</h2>
+						<p> <a href="pkgs/victoria.html">Book Now</a> </p>
+					</div>
+				</div>
+			</div>
+			<!-- individual pic with hover-effect -->
+			<div class="col-md-3">
+				<div class="hovereffect">
+					<img class="img-responsive rounded img-fluid"
+					src="/media/pkgs/mountain-crop.jpg" alt="">
+					<div class="overlay">
+						<h2>Stay in a backcountry lodge with plenty of hiking options</h2>
+						<p> <a href="/pkgs/rainforest.html">Book Now</a> </p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</nav>
-	
-<h1> Hello World! </h1>
+	</div>
+<!-- additional packages -->
+	<div class="jumbotron text-center md-10 mt-0 p-auto pt-0 light see-through">
+		<h2 class="display-4 salad"> Additonal Packages </h2>
+		<hr class="col-xs-12">
+		<div class="row salad">
+				<a class="col-md-4 text-dark" href=""> Package1</a>
+				<a class="col-md-4 text-dark" href=""> Package2</a>
+				<a class="col-md-4 text-dark" href=""> Package3</a>
+				<a class="col-md-4 text-dark" href=""> Package4</a>
+				<a class="col-md-4 text-dark" href=""> Package5</a>
+				<a class="col-md-4 text-dark" href=""> Package6</a>
+	</div>
+</div>
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
