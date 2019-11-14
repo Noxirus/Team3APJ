@@ -24,8 +24,8 @@
     </style>
 </head>
 <body>
-    <!-- need to find a better bg for this page
-<div class="jumbotron sticky-top jumbo-bg fill pt-50"> -->
+    <!-- need to find a better bg for this page -->
+<div class="jumbotron sticky-top jumbo-bg-reg fill pt-50">
     <!-- Add Navigation bar -->
     <nav class="navbar navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="/index.html">Travel Experts</a>
@@ -50,7 +50,7 @@
         </nav>
     
 <div >
-    <form action="bouncer.php" target="_blank" class="display-7 font-weight-bold mt-0 pt-0">
+    <form method="Post" action="bouncer.php" target="_blank" class="display-7 font-weight-bold mt-0 pt-0">
         
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -73,7 +73,7 @@
         <div class="form-row">
             <div class="form-group col-md-6">
             <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" name="city">
+            <input type="text" class="form-control" placeholder="City or Town" id="inputCity" name="city">
             </div>
             <div class="form-group col-md-4">
             <label for="inputprov">Prov</label>
@@ -96,7 +96,7 @@
         </div>
         <div class="form-group col-md-2">
             <label for="inputpostal">Postal Code</label>
-            <input type="text" class="form-control" id="inputpostal"name=" postal">
+            <input type="text" class="form-control" placeholder="P0S T4L" id="inputpostal"name=" postal">
             </div>
         </div>
         <div class="form-row">
@@ -105,7 +105,7 @@
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
             </div>
             <div class="form-group col-md-6">
-                <h6><label for="inputPassword4">Password</label></h6>
+                <label for="inputPassword4">Password</label>
                 <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password">
             </div>
         </div>
