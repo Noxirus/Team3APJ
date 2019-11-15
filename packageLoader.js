@@ -1,4 +1,5 @@
 /*
+	Author: Sarah Hanson
 	Package loader Script
 	Purpose: determine the package selected by the user and dyanimically
 	update the packages html page on load to have the info, details and 
