@@ -13,14 +13,19 @@
 	<title>Index</title>
 	<style>
 	body {
-		background-color:aqua;
-
+		background-image: url("media/Sunrise7.jpg")
 	}
-	
 	#carouselHead {
 			position:absolute;
-			top: 200px;
-			color:fuchsia;
+			top: 20%;
+			right: 7%;
+			padding: 15px;
+	}
+	#carouselSecond {
+			position:absolute;
+			bottom: 20%;
+			left: 7%;
+			padding: 15px;
 	}
 	
 	</style>
@@ -52,20 +57,35 @@
 			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 				<div class="carousel-inner">
 				  <div class="carousel-item active" data-interval="10000">
-					<img src="media/beach1.jpg" class="d-block w-100" alt="...">
-						<div class="carousel-caption text-lg-left">This is a test</div>
-						<div id="carouselHead">
-							<h1>Welcome to TravelCo</h1>
-							<p>Welcome to our luxurious site with many opportunities for travel</p>
-						</div>
-				  </div>
+					<img src="media/scrollpics/Shirahama.jpg" class="d-block w-100" alt="...">
+							<div id="carouselHead" class="see-through text-center">
+								<h1>Welcome to TravelCo</h1>
+								<p>Welcome to our luxurious site with many opportunities for travel</p>
+							</div>
+				 		 </div>
 				  <div class="carousel-item" data-interval="10000">
-					<img src="media/fall1.jpg" class="d-block w-100" alt="...">
-						
-					<div class="carousel-caption d-none d-md-block">This is another test</div>
+					<img src="media/scrollpics/Vienna2.jpg" class="d-block w-100" alt="...">
+					<div id="carouselSecond" class="see-through text-center col-5">
+						<h1>About Us</h1>
+						<p>Established in 2019, Travelco is a group of ambitious travel guides and organizers to provide you with the trip of your dreams</p>
+						<a href="contactusT3.html">More about us</a>
+					</div>
 				  </div>
 				  <div class="carousel-item"data-interval="10000">
-					<img src="media/harbor.jpg" class="d-block w-100" alt="...">
+					<img src="media/scrollpics/Zen.jpg" class="d-block w-100" alt="...">
+					<div id="carouselHead" class="see-through text-center col-5">
+						<h1>Travel Packages</h1>
+						<p>Enjoy our tremedeously designed travel packages</p>
+						<a href="vacayPackages.html">Click here for more information</a>
+					</div>
+				  </div>
+				  <div class="carousel-item" data-interval="10000">
+					<img src="media/scrollpics/BuckinghamPal.jpg" class="d-block w-100" alt="...">
+					<div id="carouselSecond" class="see-through text-center col-5">
+						<h1>Register Now!</h1>
+						<p>Our trip registration is quicker than ever!</p>
+						<a href="Registration.html">Click here to start your new adventure!</a>
+					</div>
 				  </div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
