@@ -5,12 +5,12 @@ function fnFormValidate()
     //document.getElementById("message").innerHTML = "";
     message = "";
     var myform = document.forms.namedItem("regForm");
-    console.log(myform.id);
-    console.log(myform.elements.length);
+    //console.log(myform.id);
+    //console.log(myform.elements.length);
     var focusSet = "False";
     for (i=0; i < myform.elements.length; i++)
     {
-        console.log(myform.elements[i].type)
+        //console.log(myform.elements[i].type)
         if (myform.elements[i].type == "text" || myform.elements[i].type == "email" || myform.elements[i].type == "password" || myform.elements[i].type == "select-one" )
         {
             if (myform.elements[i].value == "")
@@ -60,4 +60,18 @@ function fnValidatePostal(postal)
     }
 
 
+}
+
+function fnClearForm()
+{ 
+    var myform = document.forms.namedItem("regForm");
+    for (i=0; i < myform.elements.length; i++)
+    { 
+        //console.log(myform.elements[i].name)
+        //console.log( myform.elements[i].style.backgroundColor)
+        //console.log(myform.elements[i].value)
+        
+        myform.elements[i].style.backgroundColor = ""; 
+        myform.elements[i].value = "";
+    }
 }
