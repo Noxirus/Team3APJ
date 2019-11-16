@@ -8,6 +8,14 @@
 	height:100%;
 }
 
+.jumbo-bg-reg{
+	background-image: url('/media/fabian-mardi-kVKz9qnJC-k-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height:100%;
+}
+
 /* Fill the entire parent container */
 .fill{
     min-height: 100vh;
@@ -40,4 +48,8 @@
 .no-pad{
 	padding-bottom: 2px;
 	padding-top: 2px;
+}
+.small-pad{
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
