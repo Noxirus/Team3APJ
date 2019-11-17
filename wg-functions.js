@@ -1,3 +1,5 @@
+// Functions.js file by Wade Grimm, needed for Registration.html
+
 var message = "";
 var myReg = /^[ABCEGHJ-NPRSTVXY][0-9][ABCEGHJ-NPRSTV-Z][ -]?[0-9][ABCEGHJ-NPRSTV-Z][0-9]$/i;
 function fnFormValidate()	
