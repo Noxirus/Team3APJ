@@ -1,15 +1,18 @@
 // Functions.js file by Wade Grimm, needed for Registration.html
 
-var message = "";
+//Global Vars
+// var message = "";
 var myReg = /^[ABCEGHJ-NPRSTVXY][0-9][ABCEGHJ-NPRSTV-Z][ ]?[0-9][ABCEGHJ-NPRSTV-Z][0-9]$/i;
+
+//Functions Start
 function fnFormValidate()	
 {
     //document.getElementById("message").innerHTML = "";
-    message = "";
+    //message = "";
     var myform = document.forms.namedItem("regForm");
     //console.log(myform.id);
     //console.log(myform.elements.length);
-    var focusSet = "False";
+    var focusSet = false;
     for (i=0; i < myform.elements.length; i++)
     {
         //console.log(myform.elements[i].type)
@@ -18,25 +21,32 @@ function fnFormValidate()
             if (myform.elements[i].value == "")
             {
                 
-                if (focusSet == "False")
+                if (focusSet == false)
                 {
                     myform.elements[i].focus();
-                    focusSet = "True";
+                    focusSet = true;
                 }
-                message += myform.elements[i].labels[0].textContent + " must have a value";
+                //message += myform.elements[i].labels[0].textContent + " must have a value";
                 myform.elements[i].style.backgroundColor = "#f0cccc";
+            }
+            else{
+                focusSet = false;
+                myform.elements[i].style.backgroundColor = "";
+                //console.log("In Else");
             }
         }
     }
     
-    if (message)
+    if (focusSet)
     {
         //document.getElementById("message").innerHTML = message;
-        focusSet = "False";
+        //console.log("False submit");
+        focusSet = false;
         return false;
     }
     else
     {
+        //console.log("Should submit")
         return confirm("Continue submitting?");
     }
 }
