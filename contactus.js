@@ -70,11 +70,7 @@ dbo.collection("agents").find(query, {projection : {_id: 0, AgtFirstName : 1, Ag
 
   res.write(' <footer><div class="jumbotron jumbotron-fluid"><p id="terms">COPYRIGHT &copy; 2019 Codecruisers Technologies Inc. All rights reserved<a href="">TERMS OF SALE &nbsp;|</a><a href="">TERMS OF USE &nbsp;|</a><a href="">RETURN POLICY &nbsp;|</a><a href="">PRIVACY POLICY &nbsp;|</a></p></div></div></footer>')
 
-  // res.write("<p>" + x[1].AgtFirstName + "</p>");
-  // res.write("<p>" + x[2].AgtFirstName + "</p>");
-  // res.write("<p>" + x[3].AgtFirstName + "</p>");
-  // res.write("<p>" + x[4].AgtFirstName + "</p>");
-  // res.write("<p>" + JSON.stringify(y) + "</p>");
+ 
   
   res.write(' <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>');
   res.write(' <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>');
@@ -88,4 +84,4 @@ dbo.collection("agents").find(query, {projection : {_id: 0, AgtFirstName : 1, Ag
 });
 });
 }).listen(2019, ()=>{ console.log("Server is started") });
-// app.listen(27017);
+
